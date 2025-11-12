@@ -1,6 +1,6 @@
 cask "palet-ai" do
   version "1.0.2"
-  sha256 "PLACEHOLDER_WILL_UPDATE_AFTER_RELEASE"
+  sha256 "f0e5128e33b4a9ae4729a6c1f3c9a7dff6a5a5065f79572a0e1622e39ffe22dd"
 
   url "https://github.com/cha2hyun/palet-ai/releases/download/v#{version}/palet-ai-macOS-arm64.zip"
   name "Palet AI"
