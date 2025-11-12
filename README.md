@@ -65,9 +65,9 @@ This is a personal hobby project distributed for free. Apple Developer accounts 
 
 ## Links
 
-- 🏠 [Homepage](https://github.com/cha2hyun/PaletAI)
-- 📦 [Releases](https://github.com/cha2hyun/PaletAI/releases)
-- 🐛 [Issues](https://github.com/cha2hyun/PaletAI/issues)
+- 🏠 [Homepage](https://github.com/cha2hyun/palet-ai)
+- 📦 [Releases](https://github.com/cha2hyun/palet-ai/releases)
+- 🐛 [Issues](https://github.com/cha2hyun/palet-ai/issues)
 
 ## For Maintainers
 
@@ -82,7 +82,7 @@ When a new version of Palet AI is released:
 # Or manually update Casks/palet-ai.rb:
 # 1. Update version number
 # 2. Download the new release
-# 3. Calculate SHA256: shasum -a 256 PaletAI-macOS-arm64.zip
+# 3. Calculate SHA256: shasum -a 256 palet-ai-macOS-arm64.zip
 # 4. Update sha256 in the formula
 
 # Commit and push

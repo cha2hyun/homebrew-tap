@@ -1,11 +1,11 @@
 cask "palet-ai" do
-  version "1.0.1"
-  sha256 "8aa51bbda23e57f35da2981785c3a5f21ab0303939814905daf4b5b789f6a220"
+  version "1.0.2"
+  sha256 "PLACEHOLDER_WILL_UPDATE_AFTER_RELEASE"
 
-  url "https://github.com/cha2hyun/PaletAI/releases/download/v#{version}/PaletAI-macOS-arm64.zip"
+  url "https://github.com/cha2hyun/palet-ai/releases/download/v#{version}/palet-ai-macOS-arm64.zip"
   name "Palet AI"
   desc "Use multiple AI services (ChatGPT, Gemini, Perplexity, Claude) simultaneously in one screen"
-  homepage "https://github.com/cha2hyun/PaletAI"
+  homepage "https://github.com/cha2hyun/palet-ai"
 
   livecheck do
     url :url
@@ -48,7 +48,7 @@ cask "palet-ai" do
     📝 Note: This app is not signed with an Apple Developer ID.
         Homebrew automatically removes the quarantine attribute, so it works seamlessly!
 
-    💡 For more info: https://github.com/cha2hyun/PaletAI
+    💡 For more info: https://github.com/cha2hyun/palet-ai
   EOS
 end
 

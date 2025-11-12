@@ -10,13 +10,13 @@ if [ -z "$1" ]; then
 fi
 
 VERSION=$1
-URL="https://github.com/cha2hyun/PaletAI/releases/download/v${VERSION}/PaletAI-macOS-arm64.zip"
+URL="https://github.com/cha2hyun/palet-ai/releases/download/v${VERSION}/palet-ai-macOS-arm64.zip"
 
-echo "📥 Downloading PaletAI v${VERSION}..."
-curl -sL "$URL" -o /tmp/PaletAI-macOS-arm64.zip
+echo "📥 Downloading palet-ai v${VERSION}..."
+curl -sL "$URL" -o /tmp/palet-ai-macOS-arm64.zip
 
 echo "🔐 Calculating SHA256..."
-SHA256=$(shasum -a 256 /tmp/PaletAI-macOS-arm64.zip | awk '{print $1}')
+SHA256=$(shasum -a 256 /tmp/palet-ai-macOS-arm64.zip | awk '{print $1}')
 
 echo "✏️  Updating Cask formula..."
 sed -i '' "s/version \".*\"/version \"${VERSION}\"/" Casks/palet-ai.rb
