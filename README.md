@@ -69,6 +69,28 @@ This is a personal hobby project distributed for free. Apple Developer accounts 
 - 📦 [Releases](https://github.com/cha2hyun/PaletAI/releases)
 - 🐛 [Issues](https://github.com/cha2hyun/PaletAI/issues)
 
+## For Maintainers
+
+### Updating the Cask
+
+When a new version of Palet AI is released:
+
+```bash
+# Use the update script
+./update-cask.sh 1.0.2
+
+# Or manually update Casks/palet-ai.rb:
+# 1. Update version number
+# 2. Download the new release
+# 3. Calculate SHA256: shasum -a 256 PaletAI-macOS-arm64.zip
+# 4. Update sha256 in the formula
+
+# Commit and push
+git add Casks/palet-ai.rb
+git commit -m "chore: Update palet-ai to v1.0.2"
+git push origin main
+```
+
 ## License
 
 MIT License - Free to use, modify, and distribute.
