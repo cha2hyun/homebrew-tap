@@ -18,6 +18,13 @@ cask "palet-ai" do
 
   app "Palet AI.app"
 
+  # Remove quarantine attribute to allow running without code signature
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/Palet AI.app"],
+                   sudo: false
+  end
+
   zap trash: [
     "~/Library/Application Support/Palet AI",
     "~/Library/Preferences/com.paletai.app.plist",
